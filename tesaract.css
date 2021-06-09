@@ -1,0 +1,542 @@
+* {
+  margin: 0px;
+  overflow-x: hidden;
+  font-family: 'Barlow Condensed', sans-serif;
+    scroll-behavior: smooth;
+}
+html,body{
+    overflow-x: hidden;
+
+}
+#opl{
+  position: relative;
+    overflow: hidden;
+}
+nav ul li {
+  list-style: none;
+  font-size: 1.4rem;
+  color: #fff;
+  font-family: 'Barlow Condensed', sans-serif;
+  /* padding:5% 4% 2%; */
+  font-weight: 300;
+  margin: 20px;
+}
+
+nav li a, .slides a {
+  text-decoration: none;
+  color: #fff;
+}
+
+nav {
+  display: flex;
+  /* justify-content: flex-start; */
+  flex-direction: row;
+  background-color: #111d5e;
+  position: relative;
+  height: 100px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+ nav img {
+  width: 210px;
+  height: 90px;
+  padding-left: 10px;
+}
+
+.svg {
+  display: none;
+}
+
+.slides {
+  display: none;
+}
+
+.dogs {
+  width: 80%;
+  height: 500px;
+  left: 10%;
+  margin: 2%;
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(5.0px);
+  -webkit-backdrop-filter: blur(5.0px);
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.dogs h1 {
+  font-family: 'Dancing Script', cursive;
+  font-weight: 500;
+  font-size: 100px;
+  color: #edcece;
+  text-shadow: 1px 1px 2px  #b6734d;
+}
+.first{
+  position: relative;
+  top : 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.imf {
+  position: absolute;
+  top: 0;
+  bottom: 30px;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -3;
+  object-fit: cover;
+  /* overflow-y: hidden; */
+}
+
+.dok {
+  position: relative;
+  height: 80vh;
+  background-color: #fff;
+  padding: 5%;
+  color: #cf0000;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+}
+.dok div{
+  font-size: 3em;
+  word-wrap: break-word;
+  width: 80%;
+}
+.dok img{
+  width: 40%;
+  height: 80%;
+}
+
+.imstar {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-y: hidden;
+}
+
+.imgdo {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+}
+
+.imgp {
+  width: 500px;
+  font-weight: 800;
+  position: absolute;
+  font-size: 3rem;
+  color: #ffff;
+  word-wrap: break-word;
+}
+.pot p{
+  position: relative;
+  font-size: 4em;
+  font-weight:700;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+/* right: 50%; */
+  /* left: 35%; */
+}
+.ports{
+overflow-x: hidden;
+  position: relative;
+  background-color: #fff;
+  /* margin: 10 10px 0 0 ; */
+  width: 90%;
+  height: 100%;
+  padding: 8% 8% 8% 5%;
+  display: grid;
+  grid-template-columns:1fr 1fr 1fr;
+  grid-gap: 10px;
+  grid-auto-rows: minmax(200px, auto);
+}
+
+.one {
+  background-image: url('./images/a2313ee122ceed648cbf9a679ca58c9d.jpg');
+  grid-row: span 2;
+  background-size: 460px,630px;
+  background-position: center;
+}
+
+.two {
+  background-image: url('./images/christmas1.jpg');
+  grid-column: span 2;
+  background-size:920px,300px;
+  background-position: center;
+}
+
+.three {
+  background-image: url("./images/christmas-presents.jpg");
+  background-origin: border-box;
+  background-size: 480px,360px;
+  background-position: left;
+}
+
+.four {
+  background-image: url("./images/Girls-candles-front-Seoul-Christmas-tree.jpg");
+  grid-row: span 2;
+  background-size: 450px,730px;
+  background-position:  bottom;
+}
+
+.five {
+  background-image: url("./images/201912102842.webp");
+  grid-column: span 2;
+  background-size: 920px,230px;
+  background-position: center;
+}
+
+.one:hover{
+  background-size: 530px,690px;
+  background-position: center;
+  filter: brightness(.5);
+}
+.two:hover{
+  background-size: 980px,650px;
+  background-position: center;
+  filter: brightness(.5);
+}
+.three:hover{
+  background-size: 540px,280px;
+  background-position: left;
+  filter: brightness(.5);
+}
+.four:hover{
+  background-size: 500px,250px;
+  background-position: bottom;
+  filter: brightness(.5);
+}
+.five:hover{
+  background-size: 1100px,400px;
+  background-position: center;
+  filter: brightness(.5);
+}
+.one, .two, .three, .four, .five{
+  background-repeat: no-repeat;
+  cursor: pointer;
+  transition: all .8s;
+}
+
+#shop{
+  background-color: #cf0000;
+  width: 100vw;
+  height: 90vh;
+  display:flex;
+  flex-direction: column;
+}
+#shop  h2{
+  padding-top: 10px;
+  text-align: center;
+  padding: 50px;
+  font-size: 30px;
+  font-weight: 800;
+}
+#shop .last{
+
+  height: auto;
+  display: flex;
+  justify-content:  space-around;
+  flex-direction: row;
+}
+#shop img{
+  height: 210px;
+  width: 250px;
+  object-fit: cover;
+  overflow-y: hidden;
+}
+.shopitem{
+  height: 270px;
+background-color: #fff;
+padding: 10px;
+object-fit: cover;
+overflow-y: hidden;
+box-shadow: 5px 12px 49px -12px rgba(0,0,0,1);
+-webkit-box-shadow: 5px 12px 49px -12px rgba(0,0,0,1);
+-moz-box-shadow: 5px 12px 49px -12px rgba(0,0,0,1);
+transition: all 200ms ease-in;
+}
+.shopitem:hover{
+  cursor: pointer;
+
+}
+.shopitem div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3%;
+}
+
+footer{
+  max-height: 30vh;
+  color: #cf0000;
+  padding: 5% ;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer div{
+  font-size: 25px;
+  padding-top: 10px;
+
+}
+
+footer div:hover{
+  color: #096;
+  cursor: pointer;
+}
+
+footer h3{
+  font-size: 30px;
+}
+
+
+
+
+
+
+/*  */
+/* media queries */
+
+
+
+@media (max-width:1024px) {
+  html,body{
+    overflow-x: hidden;
+
+  }
+  #opl{
+    position:relative;
+      overflow-x: hidden;
+  }
+  nav li {
+    display: none;
+  }
+  nav img {
+   width: 150px;
+   height: 70px;
+   padding-left: 10px;
+ }
+  .svg {
+    background-image: url('./icons/iconfinder_menu_3324998.png');
+    /* filter: invert(1); */
+    border: 1px #fff;
+    border-radius: 1px;
+    background-size: cover;
+    background-position: center;
+    height: 25px;
+    width: 30px;
+    display: block;
+    position: absolute;
+    top: 1%;
+    right: 3px;
+    z-index: 6;
+    cursor: pointer;
+    transform-origin: center;
+    transition: all .7s;
+  }
+
+  .svg.lit {
+    background-image: url('./icons/Close-256.png');
+    background-size: cover;
+    background-position: center;
+    height: 20px;
+    width: 20px;
+    display: block;
+    position: absolute;
+    top: 1%;
+    right: 3px;
+    cursor: pointer;
+  }
+
+  .slides {
+    position: absolute;
+    /* left: 100%; */
+    top: 0%;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 300;
+    transform: translateX(500%);
+    display: block;
+    background: #e94560;
+    opacity: .9;
+    color: #fff;
+    height: 100vh;
+    width: 50vw;
+    padding: 3% 3% 3% 0%;
+    font-size: 1.3rem;
+    box-shadow: -4px 5px 5px #2a2a2c;
+    z-index: 4;
+    transition: all .7s;
+  }
+
+  .slides.lit {
+    transform: translateX(100%);
+    /* right: 0%; */
+  }
+
+  .slides li {
+    list-style: none;
+  }
+
+  .dogs {
+    width: 80%;
+    height: 200px;
+  }
+  .dogs h1{
+    font-size: 30px;
+  }
+  .dok {
+    position: relative;
+    height: 50vh;
+    margin-bottom: -20px;
+  }
+  .dok div{
+    font-size: 1em;
+    word-wrap: break-word;
+    width: 80%;
+    height: 230px;
+    overflow-y: hidden;
+  }
+  .dok img{
+    width: 60px;
+    height: 90px;
+  }
+  .imstar {
+    position: relative;
+    height: 50vh;
+   display: flex;
+   justify-content: center;
+   flex-direction: row;
+  }
+.imgdo{
+  object-fit:  scale-down;
+}
+  .imgp {
+    width: 400px;
+    padding-top: 10px;
+    font-weight: 800;
+    position: absolute;
+    font-size: 100%;
+    color: #ffff;
+    word-wrap: break-word;
+  }
+  .pot{
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+  }
+  .pot p {
+    font-size: 2rem;
+    display: flex;
+    align-self: center;
+
+  }
+  .ports{
+  overflow-x: hidden;
+    position: absolute;
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .ports div {
+    margin: 5px;
+  }
+  .one {
+    background-image: url('./images/a2313ee122ceed648cbf9a679ca58c9d.jpg');
+    height: 100px;
+    width: 300px;
+  }
+
+  .two {
+    background-image: url('./images/christmas1.jpg');
+    height: 100px;
+    width: 300px;
+  }
+
+  .three {
+    background-image: url("./images/christmas-presents.jpg");
+    height: 100px;
+    width: 300px;
+  }
+
+  .four {
+    background-image: url("./images/Girls-candles-front-Seoul-Christmas-tree.jpg");
+    height: 100px;
+    width: 300px;
+  }
+
+  .five {
+    background-image: url("./images/201912102842.webp");
+    height: 100px;
+    width: 300px;
+    margin-bottom: 15px;
+  }
+  #shop img{
+    min-height: 100px;
+    width: 120px;
+    object-fit:  cover;
+    overflow-y: hidden;
+  }
+
+  #shop .last{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .shopitem{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-height: auto;
+    min-height: 120px;
+    width: 150px;
+  padding: 10px;
+  object-fit: cover;
+  overflow-y: hidden;
+  margin: 5px 0px 15px 0px;
+
+  }
+  .shopitem div{
+    overflow-y:  hidden;
+  }
+  footer {
+    max-height: 20vh;
+  }
+  footer div{
+    font-size: 10px;
+    padding-top: 4px;
+    font-weight: 500;
+  }
+
+  footer h3{
+    font-size: 13px;
+  }
+
+}
+
+
+
+@viewport{
+  width: device-width;
+  zoom:1.0;
+}
